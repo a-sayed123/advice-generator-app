@@ -1,0 +1,93 @@
+:root {
+  /* colors */
+
+  --Blue-200: hsl(193, 38%, 86%);
+  --Green-300: hsl(150, 100%, 66%);
+  --Blue-600: hsl(217, 19%, 38%);
+  --Blue-900: hsl(217, 19%, 24%);
+  --Blue-950: hsl(218, 23%, 16%);
+
+  /* font size */
+  --Size-quote: 28px;
+
+  /* font weight */
+  --Weights: 800;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: var(--Blue-950);
+  line-height: 1.6;
+  font-family: "Manrope", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.advice {
+  position: relative;
+  background-color: var(--Blue-900);
+  width: 28rem;
+  height: 18rem;
+  border-radius: 13px;
+  text-align: center;
+}
+
+.advice__number {
+  position: relative;
+  font-size: 8pt;
+  color: var(--Green-300);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  top: 30px;
+}
+
+.advice__text {
+  position: relative;
+  top: 50px;
+  font-size: var(--Size-quote);
+  color: var(--Blue-200);
+  width: 300px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.icon__btn{
+    position: absolute;
+    left: 45%;
+    bottom: 0;
+    transform:translateY(50%);
+    background-color: var(--Green-300);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.icon__btn:hover{
+    box-shadow: 0 10px 40px var(--Green-300);
+    transform: translateY(50%);
+    transition: 250ms ease;
+}
+
+.icon__btn::before{
+    content: "";
+    background-image: url("../images/pattern-divider-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: -130%;
+    left: -210%;
+    width: 300px;
+    height: 100px;
+}
