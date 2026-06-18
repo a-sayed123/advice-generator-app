@@ -1,22 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,211&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Frontend Mentor | Advice generator app</title>
-  <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-  <div class="advice">
-    <h1 class="advice__number">Advice &num;<span id="advice__id">117</span></h1>
-    <p class="advice__text">&ldquo; <span id="advice__text">Advivce will be here</span> &rdquo;</p>
-    <button class="icon__btn" id="advice__btn"><img src="./images/icon-dice.svg" alt="icon__bottom"></button>
-  </div>
-  <script src="./script/script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,211&family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Advice generator app</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <section class="advice">
+        <h1 class="advice__number">
+          Advice &num;<span id="advice__id">117</span>
+        </h1>
+        <p class="advice__text">
+          &ldquo; <span id="advice__content">Advice will be here</span> &rdquo;
+        </p>
+        <button class="icon__btn" id="advice__btn" aria-label="Generate New Advice">
+          <img src="./images/icon-dice.svg" alt="" />
+        </button>
+      </section>
+    </main>
+    <script src="./script/script.js"></script>
+  </body>
 </html>
-
